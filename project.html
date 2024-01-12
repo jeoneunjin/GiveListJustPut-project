@@ -1,0 +1,138 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <title>HACKATHON</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!--bootstrap4관련-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!--bootstrap4관련-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="project.js"></script>
+    <link rel="stylesheet" href="project.css">
+    
+    <!--휴대폰 화면에서 Address Bar 감추기-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand"><img src="img/logo2.png" width=50px height=50></img></a>
+        <ul class ="navbar-nav">
+            <li class="nav-item" id="help">Help?</li>
+        </ul>
+    </nav>
+    <div class="container-fulid">
+        <div class="jumbotron">
+            <img src="img/banner2.JPG" id="banner" class="img-thumbnail"alt="title" widht="520" height="200">
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-8">
+        <div class="container">
+            <label for="keyword">KeyWord</label>
+            <input type="text" class="input"id="keyword" name="keyword" placeholder="키워드를 입력하세요."></input>
+        </div>
+ 
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form action="/action_page.php">
+                        <div class="form-check-inline">
+                        <label class="form-check-label" for="check">
+                            <input type="checkbox" class="form-check-input" id="check1" name="vehicle1" value="something" checked>유료 광고 포함 
+                        </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <button type="button" id="submit">검색하기</button>  
+        <div id="select">
+            <form action="#">
+                <label for="filter">Filter</label>
+                <select name="filters" id="filter">
+                    <option selected>SELECT</option>
+                    <option value="lastest">최신순</option>
+                    <option value="view">조회순</option>
+                </select>
+            </form>
+        </div>
+        </div>
+        <div class="container" id="main">
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>INFO! </strong>여기서 5위까지의 리스트가 제공됩니다!
+            </div>
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>INFO! </strong>긍정도(%)= 긍정의 댓글이라고 분석된 댓글 개수 / 총 댓글의 개수 * 100 
+            </div>
+            <div id="cardslist">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                        <div class="col">
+                            <img src="img/youtube.JPG" class="thumbnail"width=300 height=300></img>
+                        </div>   
+                        <div class="col">
+                            <span class="badge badge-warning">유료</span>
+                            <ul class="object-list">
+                                <li class="obj-items">제목 : 빵빵이의 복권당첨</li>
+                                <li class="obj-items">업로드 날짜 :2024-01-03</li>
+                                <li class="obj-items">요약 내용 : 빵빵이가 굶어 죽기 직전인 옥지를 위해 당첨된 복권을 훔쳤다!</li>
+                        </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                        <div class="col">
+                            <img src="img/youtube.JPG" class="thumbnail"width=300 height=300></img>
+                        </div>   
+                        <div class="col">
+                            <span class="badge badge-warning">유료</span>
+                            <ul class="object-list">
+                                <li class="obj-items"></li>
+                                <li class="obj-items"></li>
+                                <li class="obj-items"></li>
+                                <li class="obj-items"></li>
+                                <li class="obj-items"></li>
+
+                            </ul>
+                        </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4" id="favorites">
+        <h2 id="fav"><span><img src="img/fav.png" id="fav-img" width=30 height="30"></img></span>FAVORITES</h2>
+        <div class="alert alert-success">
+            <strong>INFO!</strong> 최근에 누른 10개의 즐겨찾기만 보여집니다.
+        </div>
+        <ul id="fav-list">
+            <li class="fav-item">빵빵이의 복권 당첨</li>
+            <li class="fav-item">빵빵이와 옥지의 끼꼬랜드~!</li>
+            <li class="fav-item">빵빵이의 흑화~!</li>
+            <li class="fav-item">옥지의 성형~!</li>
+        </ul>
+    </div>
+    </div>
+
+</body>
+</html>
