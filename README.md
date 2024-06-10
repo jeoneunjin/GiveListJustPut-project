@@ -1,7 +1,7 @@
 # 2024 NEWYEARHACKATHON
 
 
-  ![KakaoTalk_20240610_162609230 png](https://github.com/jeoneunjin/GiveListJustPut-project/assets/67683170/e731621f-dcc7-446d-b5be-5b0becf14291)  **GiveListJustPut 프로젝트(2024.01.02 ~ 2024.01.03**
+  ![KakaoTalk_20240610_162609230 png](https://github.com/jeoneunjin/GiveListJustPut-project/assets/67683170/e731621f-dcc7-446d-b5be-5b0becf14291)  **GiveListJustPut 프로젝트(2024.01.02 ~ 2024.01.03)**
 
 
 
